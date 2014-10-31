@@ -37,6 +37,10 @@ CONCURRENCY | Maximum number of concurrent users to test
 DURATION | Duration of the test in seconds
 NUM_PAGES | Number of pages a user will visit before being replaced by another user
 
+
+![This is where the settings live](https://raw.githubusercontent.com/ByteInternet/hypernode-performance-test/master/media/jmeter-crawler-settings.png)
+
+
 ## Running headless
 
 ```

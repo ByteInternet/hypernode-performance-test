@@ -37,26 +37,6 @@ CONCURRENCY | Maximum number of concurrent users to test
 DURATION | Duration of the test in seconds
 NUM_PAGES | Number of pages a user will visit before being replaced by another user
 
-### sitemapcrawler.jmx
-
-This plan will simulate users that visit random URLs taken from a sitemap file.
-The first request it will do is fetch the sitemap, then it will visit the homepage,
-and then it will visit some random URLs taken from the sitemap.
-
-The following variables are available:
-
-variable | description
---- | ---
-SERVER | IP address of the server to test
-CONCURRENCY | Maximum number of concurrent users to test
-DURATION | Duration of the test in seconds
-SITEMAP_URL | URL path to the Google sitemap
-NUM_PAGES | Number of pages a user will visit before being replaced by another user
-
-The test will start with one user and incrementally use more users until $CONCURRENCY
-during the given $DURATION. Each user will apart from the homepage visit $NUM_PAGES with a
-speed of about 3 pages per second.
-
 ## Running headless
 
 ```
